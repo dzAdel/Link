@@ -24,7 +24,7 @@ sealed class ThrottleApp
             if (argParser.Options.ContainsKey("h"))
             {
                 string hlp = "Displays a maximum of 'N' lines at a time and then waits the user to press a key " +
-                    "to display the next 'N' lines. The 'Q' and 'ESC' keys are used to interrupt the program execution." +
+                    "to display the next 'N' lines. The 'Q' and 'ESC' keys are used to interrupt the execution of the program." +
                     $"\nVersion {Version}" +
                     $"\nUsage:\t{Usage}" +
                     "\nN:\tThe number of lines to display each time." +

@@ -9,7 +9,7 @@
 		<AssemblyVersion>4.0.0.0</AssemblyVersion>
 		<FileVersion>$(AssemblyVersion)</FileVersion>
 		<Authors>chez.adel@outlook.fr</Authors>
-		<Copyright>chez.adel@outlook.fr (c) 2025</Copyright>
+		<Copyright>chez.adel@outlook.fr (c) 2024 - 2025</Copyright>
 	</PropertyGroup>
 
 	<ItemGroup>

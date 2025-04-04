@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>Link</RootNamespace>
+		<AssemblyVersion>4.1.0.0</AssemblyVersion>
+		<FileVersion>$(AssemblyVersion)</FileVersion>
+		<Authors>chez.adel@outlook.fr</Authors>
+		<Copyright>chez.adel@outlook.fr (c) 2024 - 2025</Copyright>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Link.Core\Link.Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="easyLib.Debug">
+			<HintPath>..\..\libs\$(ConfigurationName)\$(TargetFramework)\easyLib.Debug.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="easyLib.Debug.DebugHelper">
+			<Static>True</Static>
+		</Using>
+	</ItemGroup>
+
+</Project>

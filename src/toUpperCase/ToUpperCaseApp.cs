@@ -14,9 +14,10 @@ static class ToUpperCaseApp
 
             if (argParser.Options.ContainsKey("h"))
             {
-                string hlp = "Returns the input string converted to uppercase. This command uses the casing rules of " +
-                    "the current culture to convert each character in the input to its uppercase equivalent. If a character " +
-                    "does not have a uppercase equivalent, it is included unchanged in the returned string." +
+                string hlp = "Returns the input string converted to uppercase. " +
+                    "This command uses the case rules of the current culture to convert each character in the input " +
+                    "to its uppercase equivalent. If a character has no uppercase equivalent, " +
+                    "it is included unchanged in the returned string." +
                     $"\nVersion {Version}" +
                     $"\nUsage:\t{Usage}" +
                     "\n--h:\tDisplays this help and exits.";

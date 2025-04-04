@@ -13,9 +13,10 @@ static class ToLowerCaseApp
 
             if (argParser.Options.ContainsKey("h"))
             {
-                string hlp = "Returns the input lines converted to lowercase. This command uses the casing rules of the current " +
-                    "culture to convert each character in the input to its lowercase equivalent. If a character does not " +
-                    "have a lowercase equivalent, it is included unchanged in the returned string." +
+                string hlp = "Returns input rows that have been converted to lowercase. " +
+                    "This command uses the case rules of the current culture to convert each character in " +
+                    "the input to equivalent lowercase letters. If a character has no lowercase equivalent, " +
+                    "it is included unchanged in the returned string." +
                     $"\nVersion {Version}" +
                     $"\nUsage:\t{Usage}" +
                     "\n--h:\tDisplays this help and exits.";

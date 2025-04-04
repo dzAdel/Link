@@ -15,11 +15,11 @@ static class WrapApp
 
             if (argParser.Options.ContainsKey("h"))
             {
-                string hlp = "For each input line, puts a line feed every 'count' characters if it does not " +
+                string hlp = "For each input line, puts a line feed every 'N' characters, if it does not " +
                     "reach a new line before that point." +
                     $"\nVersion {Version}" +
                     $"\nUsage:\t{Usage}" +
-                    "\ncount:\tA positive interger which correspond to the maximum length of a line." +
+                    "\nN:\tA positive integer which correspond to the maximum length of a line." +
                     "\n--h:\tDisplays this help and exits.";
 
                 IOManager.WriteLine(hlp);
@@ -44,7 +44,7 @@ static class WrapApp
     }
 
     //private:
-    static string Usage => $"{AppName} count [--h]";
+    static string Usage => $"{AppName} N [--h]";
     static string AppName => System.Diagnostics.Process.GetCurrentProcess().ProcessName;
 
     static string Version
