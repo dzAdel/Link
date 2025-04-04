@@ -1,7 +1,7 @@
 # Link
 Link is a collection of general-purpose applications (commands). Some of these commands are inspired by the System.Linq of the .NET. The commands were chosen according to my personal needs and also by symmetry (if the `toUpperCase` command is produced, the `toLowercCase` command should also be produced). The general principle followed is that it is better to have several commands each performing a simple task than to have a single complicated command. 
 
-The current version is 4.0.1.
+The current version is 4.1.0.
 
 It should also be noted that:
 * All commands follow the same format, namely: \\<Command-name> \\<Parameters> \\<Options>. The order of the arguments is important.
