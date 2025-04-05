@@ -4,7 +4,7 @@ Link is a collection of general-purpose applications (commands). Some of these c
 The current version is 4.1.0.
 
 It should also be noted that:
-* All commands follow the same format, namely: \\<Command-name> \\<Parameters> \\<Options>. The order of the arguments is important.
+* All commands follow the same format, namely: \<Command-name> \<Parameters> \<Options>. The order of the arguments is important.
 * Options starts with – (2 minus signs).
 * All commands share the --h switch, which displays a small help message and exits the application.
 * Most commands get their input from the output of another command. Commands are connected by the pipe operator.
@@ -22,13 +22,13 @@ Usage: about \[appName] \[--h]
 * --h: Displays this help and exits.
 
 ## append
-Adds a string to the end of each line in the input sequence.
+Adds a string to the end of each line in the input sequence. 
 Usage: append suffix \[--h]
 * suffix: The string to append to each input line.
 * --h: Displays this help and exits.
 
 ## copyFiles
-Copies the files in the input sequence to another location. Unless they already exist, all directories specified in the destinations will be created. The command returns the copied files.
+Copies the files in the input sequence to another location. Unless they already exist, all directories specified in the destinations will be created. The command returns the copied files. 
 Usage: copyFiles ptrn dest \[src] \[--ri]\[--ovw]\[--cs]\[--h]
 * ptrn: Represents a regular expression pattern to match. The input lines for which 'ptrn' is not matched are ignored.
 * dest: A transform pattern to apply to each input line to extract the destination file. It can consist of any combination of literal text and substitutions based on 'ptrn', such as capturing group that is identified by a number or a name.
@@ -47,7 +47,7 @@ Usage: copyToDir dest \[--ri]\[--ovw]\[--h]
 * --h: Displays this help and exits.
 
 ## count
-Counts the number of lines in the input sequence.
+Counts the number of lines in the input sequence. 
 Usage: count \[--h]
 * --h: Displays this help and exits.
 
