@@ -553,6 +553,7 @@ Usage: wrap count [--h]
 
 # TODO
 ## createFiles
+## copyDirs
 ## checksum
 Generates and returns a checksum value for every input line.
 Type: Mutator.
